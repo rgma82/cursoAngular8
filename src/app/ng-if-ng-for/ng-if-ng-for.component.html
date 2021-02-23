@@ -1,0 +1,19 @@
+<h1 *ngIf="numero === 1">Esse será exibido</h1>
+
+<h1 *ngIf="numero === 2">Esse tabém será exibido</h1>
+
+<input (input)="numero = $event.target.value" />
+<h1 *ngIf="numero > 5 ">Esse tabém será exibido se for maior que 5</h1>
+
+
+<h1 *ngFor="let n of arrNumeros">linha {{n}}</h1>
+
+<h1 *ngFor="let p of arrPessoas">meu nome e  {{p}}</h1>
+
+<div *ngFor="let p of arrPessoas">
+<h2 *ngIf="p ==='rafael'"> o nome e {{p}}</h2>
+</div>
+
+<div *ngFor="let p of arrPessoas">
+  <h2 *ngIf="p !='julio'"> o nome e {{p}}</h2>
+  </div>
